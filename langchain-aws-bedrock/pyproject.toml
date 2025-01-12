@@ -1,9 +1,11 @@
 [project]
-name = "pydantic-in-10minutes"
+name = "langchain-aws-bedrock"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "pydantic>=2.10.5",
+    "langchain>=0.3.14",
+    "langchain-aws>=0.2.10",
+    "langchain-core>=0.3.29",
 ]

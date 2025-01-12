@@ -92,3 +92,6 @@ print(f"Square root of 16 is: {math.sqrt(16)}")
 
 from utils import mymath # here, utils is package (folder with __init__.py file) and mymath is module
 print(mymath.calcAdd(2,3))
+
+from mymodule import c 
+print(c())
