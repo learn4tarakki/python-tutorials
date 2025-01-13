@@ -19,17 +19,22 @@ print(greet("Bob"))
 from typing import List, Dict, Optional, Union, TypedDict
 
 # List of integers
-numbers: List[int] = [1, 2, 3, 4, 5] # in 3.9+, list[int]
+numbers: List[int] = [1, 2, 3, 4, 5] 
+# in 3.9+, numbers: list[int] = [1, 2, 3, 4, 5]
 
 # Dictionary with string keys and integer values
-person: Dict[str, int] = {"age": 30, "height": 175} # in 3.9+, dict[str,int]
+person: Dict[str, int] = {"age": 30, "height": 175} 
+# in 3.9+, person: dict[str, int] = {"age": 30, "height": 175}
 
 # Several types 
-result: Union[int, str] = 2 # in 3.10+, int | str 
+result: Union[int, str] = 2 
+# in 3.10+, result: int | str = 2
 result = "hello"
 
 # Optional type: value can be int or None
-optional_value: Optional[int] = None # same as Union[int, None] # in 3.10+, int | None
+optional_value: Optional[int] = None # OR 
+optional_value: Union[int, None] = None 
+# in 3.10+, optional_value: int | None = None
 
 # Printing examples
 print(f"Numbers: {numbers}")
