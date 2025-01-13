@@ -8,6 +8,8 @@ print(type(x), type(y), type(name), type(is_active))  # Checking types
 # Print and f-strings
 print(f"Hello, {name}! You have {x} messages.")  # Formatted string
 
+print("-------")
+
 # If, Elif, Else
 if x > 15:
     print("x is greater than 15")
@@ -20,15 +22,27 @@ else:
 for i in range(1, 6):  # Loops from 1 to 5
     print(f"Iteration {i}")
 
+print("-------")
 # Python Collections: List, Tuple, Dict
 fruits = ["apple", "banana", "cherry"]  # List
 coordinates = (10, 20, 30)              # Tuple (immutable)
 person = {"name": "Bob", "age": 25}     # Dictionary
 
-# Accessing elements
+# accessing elements
 print(fruits[0], coordinates[1], person["name"])
-fruits.append("orange")  # Adding to list
+
+# list
+fruits.append("orange")  
+print(len(fruits))
 print(fruits)
+
+# dict
+print(person.keys())
+print(person.values())
+for key, value in person.items():
+    print(key, ":", value)
+
+print("-------")
 
 # Python Functions and Lambda
 def add(a, b):
@@ -39,6 +53,8 @@ print(f"Sum: {result}")
 
 square = lambda x: x * x  # Lambda function
 print(f"Square: {square(4)}")
+
+print("-------")
 
 # Python Classes with __str__, __call__, and add method
 class Calculator:
@@ -65,6 +81,8 @@ print(calc)               # Using __str__ to display the result, if both __str__
 print(str(calc))          # calls __str__
 print(repr(calc))         # calls __repr__
 
+print("-------")
+
 # File Handling using 'with'
 with open("sample.txt", "w") as file:
     file.write("Hello, Python learners!")
@@ -72,6 +90,8 @@ with open("sample.txt", "w") as file:
 with open("sample.txt", "r") as file:
     content = file.read()
     print(content)
+
+print("-------")
 
 # try-except-finally 
 try:
@@ -85,6 +105,8 @@ except ZeroDivisionError:
     print("You can't divide by zero!")
 finally:
     print("Execution finished.")
+
+print("-------")
 
 # Python Packages and Modules
 import math
