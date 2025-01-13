@@ -1,5 +1,3 @@
-# Python Type Hints: main.py
-
 # Built-in Type Hints
 x: int = 10          # Integer
 y: float = 3.14      # Float
@@ -14,7 +12,7 @@ def greet(name: str) -> str:
 print(greet("Bob"))
 
 # Using the typing Module for python 3.8+
-from typing import List, Dict, Optional, Union,TypedDict
+from typing import List, Dict, Optional, Union, TypedDict
 
 # List of integers
 numbers: List[int] = [1, 2, 3, 4, 5] # in 3.9+, list[int]
