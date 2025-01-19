@@ -1,8 +1,11 @@
 ### setup and run 
+- install pipx (requires Python 3.8+ on system)
+    - sudo apt update
+    - sudo apt install pipx
+    - pipx ensurepath
 - install uv 
     - pipx install uv 
 - uv init 
 - rename hello.py to main.py
 - add logic  
 - uv run main.py 
-
