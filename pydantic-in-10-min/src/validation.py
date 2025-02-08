@@ -1,9 +1,9 @@
-# class User: 
-#     id: int
-#     name: str 
+class User: 
+    id: int
+    name: str 
 
-# user = User(id="11", name="arjun") 
-# print(user)
+user = User(id="11", name="arjun") 
+print(user)
 
 ##############################
 
