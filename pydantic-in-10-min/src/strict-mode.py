@@ -8,7 +8,7 @@ class Meeting(BaseModel):
     where: bytes
 
 
-m = Meeting.model_validate({'when': '2020-01-01T12:00', 'where': 'home'})
+m = Meeting.model_validate({"when": "2020-01-01T12:00", "where": "home"})
 print(m)
 
 ##########################################################
@@ -25,7 +25,7 @@ print(m)
 # m_json = Meeting.model_validate_json(
 #     '{"when": "2020-01-01T12:00", "where": "home"}'
 # )
-# print(m_json)    
+# print(m_json)
 
 # try:
 #     m1 = Meeting.model_validate(m_json, strict=True)

@@ -14,7 +14,7 @@ class Address(BaseModel):
 class Meeting(BaseModel):
     when: datetime
     where: Address
-    why: str = 'No idea'
+    why: str = "No idea"
 
 
 print(Meeting.model_json_schema())
