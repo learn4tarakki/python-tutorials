@@ -4,6 +4,7 @@ x: int = 10          # Integer
 y: float = 3.14      # Float
 name: str = "Alice"  # String
 is_active: bool = True  # Boolean
+# python also has - datetime, UUID or bytes
 print(f"x: {x}, y: {y}, name: {name}, is_active: {is_active}")
 
 ############################################################################
@@ -105,7 +106,11 @@ def say_hello(name: Annotated[str, "this is just metadata"]) -> str:
     return f"Hello {name}"
 
 ############################################################################
+from typing import Literal
 
+color: Literal["red", "green"]
+
+#############################################################################
 # Generic Types Example (Simple)
 from typing import TypeVar, Generic
 

@@ -78,7 +78,7 @@ wheels = [
 ]
 
 [[package]]
-name = "pydantic-in-10minutes"
+name = "pydantic-in-10-min"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
