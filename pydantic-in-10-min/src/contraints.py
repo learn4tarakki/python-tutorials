@@ -1,5 +1,6 @@
 from typing_extensions import Annotated
 from pydantic import BaseModel, Field
+from devtools import debug 
 
 
 class User(BaseModel):
@@ -12,4 +13,4 @@ user = User(
     name="ms dhoni",
 )
 
-print(user)
+debug(user)

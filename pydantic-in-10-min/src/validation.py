@@ -1,10 +1,12 @@
+from devtools import debug 
+
 class User:
     id: int
     name: str
 
 
 user = User(id="11", name="arjun")
-print(user)
+debug(user)
 
 ##############################
 
@@ -16,7 +18,7 @@ print(user)
 #         self.name = name
 
 # user = User(id="11", name="arjun")
-# print(user)
+# debug(user)
 
 ##############################
 
@@ -27,7 +29,7 @@ print(user)
 #     name: str
 
 # user = User(id="11", name="arjun")
-# print(user)
+# debug(user)
 
 ###############################
 
@@ -41,6 +43,6 @@ print(user)
 
 # try:
 #     u = User(**user_json)
-#     print(u.model_dump())
+#     debug(u.model_dump())
 # except ValidationError as e:
-#     print(e.errors())
+#     debug(e.errors())

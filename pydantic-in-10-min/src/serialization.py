@@ -1,3 +1,5 @@
+from devtools import debug 
+
 # Serialization
 # - into dict
 # - into dict with only jsonable fields
@@ -15,6 +17,6 @@ class Meeting(BaseModel):
 
 
 m = Meeting(when="2025-02-08T12:00", where="home")
-print(m.model_dump(exclude_unset=True))
-print(m.model_dump(exclude={"where"}, mode="json"))
-print(m.model_dump_json(exclude_defaults=True))
+debug(m.model_dump(exclude_unset=True))
+debug(m.model_dump(exclude={"where"}, mode="json"))
+debug(m.model_dump_json(exclude_defaults=True))

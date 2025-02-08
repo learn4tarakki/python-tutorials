@@ -1,7 +1,7 @@
 # JSON Schema dump compatible with OpenAPI 3.1
 
 from datetime import datetime
-
+from devtools import debug 
 from pydantic import BaseModel
 
 
@@ -17,4 +17,4 @@ class Meeting(BaseModel):
     why: str = "No idea"
 
 
-print(Meeting.model_json_schema())
+debug(Meeting.model_json_schema())
